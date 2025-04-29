@@ -1,6 +1,6 @@
 //
-//  BrooklynView.swift
-//  Brooklyn
+//  SalisSaverView.swift
+//  SalisSaver
 //
 //  Created by Pedro Carrasco on 30/10/2018.
 //  Copyright © 2018 Pedro Carrasco. All rights reserved.
@@ -10,11 +10,11 @@ import Foundation
 import ScreenSaver
 import AVKit
 
-// MARK: - BrooklynView
-final class BrooklynView: ScreenSaverView {
+// MARK: - SalisSaverView
+final class SalisSaverView: ScreenSaverView {
 
     // MARK: Local Typealias
-    typealias Static = BrooklynView
+    typealias Static = SalisSaverView
     
     // MARK: Constant
     private enum Constant {
@@ -26,7 +26,7 @@ final class BrooklynView: ScreenSaverView {
     private let videoLayer = AVPlayerLayer()
     
     // MARK: Properties
-    private let manager = BrooklynManager(mode: .screensaver)
+    private let manager = SalisSaverManager(mode: .screensaver)
     private lazy var preferences = PreferencesWindowController(windowNibName: PreferencesWindowController.identifier)
 
     // MARK: Initialization
@@ -44,7 +44,7 @@ final class BrooklynView: ScreenSaverView {
 }
 
 // MARK: - Lifecycle
-extension BrooklynView {
+extension SalisSaverView {
     
     override func startAnimation() {
         super.startAnimation()
@@ -58,7 +58,7 @@ extension BrooklynView {
 }
 
 // MARK: - Configuration
-private extension BrooklynView {
+private extension SalisSaverView {
     
     func configure() {
         defineLayer()
@@ -73,23 +73,41 @@ private extension BrooklynView {
     
     func setupLayer() {
         videoLayer.player = manager.player
+        
+        // macOS SequoiaでのUI表示問題対策
+        if let player = videoLayer.player {
+            // 外部再生を無効化してアップルロゴのUIを抑制
+            player.allowsExternalPlayback = false
+        }
     }
 }
 
 // MARK: - Define Layers
-private extension BrooklynView {
+private extension SalisSaverView {
 
     func defineVideoLayer() {
+        // 基本的なフレーム設定
         videoLayer.frame = bounds
+        
+        // 位置問題修正：アンカーポイントと位置を明示的に設定
+        videoLayer.position = CGPoint(x: bounds.width/2, y: bounds.height/2)
+        videoLayer.anchorPoint = CGPoint(x: 0.5, y: 0.5)
+        
+        // レイヤーのプロパティを設定
         videoLayer.autoresizingMask = [.layerWidthSizable, .layerHeightSizable]
         videoLayer.needsDisplayOnBoundsChange = true
         videoLayer.contentsGravity = .resizeAspect
         videoLayer.backgroundColor = Constant.backgroundColor.cgColor
+        
+        // ホットコーナーからの起動で位置ズレが起きないよう、サイズを明示
+        if let currentScreen = NSScreen.screens.first(where: { $0.frame.contains(self.frame.origin) }) ?? NSScreen.main {
+            videoLayer.frame = CGRect(x: 0, y: 0, width: currentScreen.frame.width, height: currentScreen.frame.height)
+        }
     }
 }
 
 // MARK: - Preferences
-extension BrooklynView {
+extension SalisSaverView {
 
     override var hasConfigureSheet: Bool {
         return true

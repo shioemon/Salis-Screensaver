@@ -172,7 +172,7 @@
 		20C8B0D8255588820099FBC6 /* cubicMess.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 20C8B043255588810099FBC6 /* cubicMess.mp4 */; };
 		20C8B0D9255588820099FBC6 /* juicy.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 20C8B044255588810099FBC6 /* juicy.mp4 */; };
 		20C8B0DA255588820099FBC6 /* juicy.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 20C8B044255588810099FBC6 /* juicy.mp4 */; };
-		20CAF50621891FCE0086AED8 /* BrooklynView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20CAF50521891FCE0086AED8 /* BrooklynView.swift */; };
+		20CAF50621891FCE0086AED8 /* SalisSaverView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20CAF50521891FCE0086AED8 /* SalisSaverView.swift */; };
 		4C95DB8B234D5E54000D05FD /* String+Localized.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C95DB89234D5E53000D05FD /* String+Localized.swift */; };
 		4C95DB8E234D5E80000D05FD /* String+Localized.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C95DB89234D5E53000D05FD /* String+Localized.swift */; };
 		4C95DB9E234E931A000D05FD /* XIBLocalizable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C95DB9D234E931A000D05FD /* XIBLocalizable.swift */; };
@@ -197,6 +197,10 @@
 		53E840F0221D9B5D005FA65E /* AVPlayerItem+Init.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5368994D221C68790071D26F /* AVPlayerItem+Init.swift */; };
 		53E84109221DA549005FA65E /* NSObject+Identifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53E84108221DA549005FA65E /* NSObject+Identifier.swift */; };
 		53E8410A221DA549005FA65E /* NSObject+Identifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53E84108221DA549005FA65E /* NSObject+Identifier.swift */; };
+		A06112562DBB5E8D000D16F2 /* AspectFitButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A06112552DBB5E8D000D16F2 /* AspectFitButton.swift */; };
+		A06112572DBB5E8D000D16F2 /* AspectFitButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A06112552DBB5E8D000D16F2 /* AspectFitButton.swift */; };
+		A099273A2DB0E1AC00DD56AA /* AVPlayerItem+Video.swift in Sources */ = {isa = PBXBuildFile; fileRef = A09927392DB0E1AC00DD56AA /* AVPlayerItem+Video.swift */; };
+		A099273B2DB0E1AC00DD56AA /* AVPlayerItem+Video.swift in Sources */ = {isa = PBXBuildFile; fileRef = A09927392DB0E1AC00DD56AA /* AVPlayerItem+Video.swift */; };
 		D04ECA65234A3DF4008CCDBC /* Localizations.swift in Sources */ = {isa = PBXBuildFile; fileRef = D04ECA64234A3DF4008CCDBC /* Localizations.swift */; };
 		D04ECA66234A3EA7008CCDBC /* Localizations.swift in Sources */ = {isa = PBXBuildFile; fileRef = D04ECA64234A3DF4008CCDBC /* Localizations.swift */; };
 /* End PBXBuildFile section */
@@ -285,9 +289,9 @@
 		20C8B042255588810099FBC6 /* doodle.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = doodle.mp4; sourceTree = "<group>"; };
 		20C8B043255588810099FBC6 /* cubicMess.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = cubicMess.mp4; sourceTree = "<group>"; };
 		20C8B044255588810099FBC6 /* juicy.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = juicy.mp4; sourceTree = "<group>"; };
-		20CAF50521891FCE0086AED8 /* BrooklynView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BrooklynView.swift; sourceTree = "<group>"; };
+		20CAF50521891FCE0086AED8 /* SalisSaverView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SalisSaverView.swift; sourceTree = "<group>"; };
 		218D6EDE20FC3CEB0029D4A9 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		21F222261B73B5AC00B9A11A /* Brooklyn.saver */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Brooklyn.saver; sourceTree = BUILT_PRODUCTS_DIR; };
+		21F222261B73B5AC00B9A11A /* SalisSaver.saver */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SalisSaver.saver; sourceTree = BUILT_PRODUCTS_DIR; };
 		4C95DB89234D5E53000D05FD /* String+Localized.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Localized.swift"; sourceTree = "<group>"; };
 		4C95DB9D234E931A000D05FD /* XIBLocalizable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XIBLocalizable.swift; sourceTree = "<group>"; };
 		5332EB18221F091F00286C65 /* Database.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Database.swift; sourceTree = "<group>"; };
@@ -305,6 +309,8 @@
 		53E840E3221D9AAB005FA65E /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		53E840E4221D9AAB005FA65E /* MainMenu.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainMenu.xib; sourceTree = "<group>"; };
 		53E84108221DA549005FA65E /* NSObject+Identifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSObject+Identifier.swift"; sourceTree = "<group>"; };
+		A06112552DBB5E8D000D16F2 /* AspectFitButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AspectFitButton.swift; sourceTree = "<group>"; };
+		A09927392DB0E1AC00DD56AA /* AVPlayerItem+Video.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AVPlayerItem+Video.swift"; sourceTree = "<group>"; };
 		D04ECA64234A3DF4008CCDBC /* Localizations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Localizations.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -329,7 +335,7 @@
 		20B669BF221DEE1400645925 /* Screen Saver */ = {
 			isa = PBXGroup;
 			children = (
-				20CAF50521891FCE0086AED8 /* BrooklynView.swift */,
+				20CAF50521891FCE0086AED8 /* SalisSaverView.swift */,
 			);
 			path = "Screen Saver";
 			sourceTree = "<group>";
@@ -337,6 +343,7 @@
 		20B669C0221DEE2200645925 /* Preferences */ = {
 			isa = PBXGroup;
 			children = (
+				A06112552DBB5E8D000D16F2 /* AspectFitButton.swift */,
 				20B669C1221DEE3800645925 /* PreferencesWindowController.xib */,
 				53689945221C66F60071D26F /* PreferencesWindowController.swift */,
 				53689958221C6DA60071D26F /* AnimationCellView.swift */,
@@ -462,7 +469,7 @@
 		21F222271B73B5AC00B9A11A /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				21F222261B73B5AC00B9A11A /* Brooklyn.saver */,
+				21F222261B73B5AC00B9A11A /* SalisSaver.saver */,
 				53E840D5221D9A8E005FA65E /* Canvas.app */,
 			);
 			name = Products;
@@ -473,6 +480,7 @@
 			children = (
 				53689936221C66BD0071D26F /* Animation.swift */,
 				53689935221C66BD0071D26F /* Extension.swift */,
+				A09927392DB0E1AC00DD56AA /* AVPlayerItem+Video.swift */,
 				206ECE322221869400971C99 /* URLType.swift */,
 				206ECE3B2221993000971C99 /* DisplayMode.swift */,
 			);
@@ -552,7 +560,7 @@
 			);
 			name = Brooklyn;
 			productName = MinimalClock;
-			productReference = 21F222261B73B5AC00B9A11A /* Brooklyn.saver */;
+			productReference = 21F222261B73B5AC00B9A11A /* SalisSaver.saver */;
 			productType = "com.apple.product-type.bundle";
 		};
 		53E840D4221D9A8E005FA65E /* Canvas */ = {
@@ -793,9 +801,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A06112572DBB5E8D000D16F2 /* AspectFitButton.swift in Sources */,
 				53689948221C66F60071D26F /* PreferencesWindowController.swift in Sources */,
-				20CAF50621891FCE0086AED8 /* BrooklynView.swift in Sources */,
+				20CAF50621891FCE0086AED8 /* SalisSaverView.swift in Sources */,
 				5368993D221C66C10071D26F /* NSTableView+Dequeue.swift in Sources */,
+				A099273A2DB0E1AC00DD56AA /* AVPlayerItem+Video.swift in Sources */,
 				206ECE332221869400971C99 /* URLType.swift in Sources */,
 				2023D4FA222204E6007B6243 /* LoopPlayer.swift in Sources */,
 				D04ECA65234A3DF4008CCDBC /* Localizations.swift in Sources */,
@@ -817,9 +827,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A06112562DBB5E8D000D16F2 /* AspectFitButton.swift in Sources */,
 				53E840F0221D9B5D005FA65E /* AVPlayerItem+Init.swift in Sources */,
 				53E840EE221D9B57005FA65E /* NSTableView+Dequeue.swift in Sources */,
 				2023D4FB222205B0007B6243 /* LoopPlayer.swift in Sources */,
+				A099273B2DB0E1AC00DD56AA /* AVPlayerItem+Video.swift in Sources */,
 				20B669C4221DEFDE00645925 /* PreferencesWindowController.swift in Sources */,
 				206ECE342221879200971C99 /* URLType.swift in Sources */,
 				D04ECA66234A3EA7008CCDBC /* Localizations.swift in Sources */,
@@ -955,7 +967,7 @@
 				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 4;
+				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 7GE4Q65N57;
 				INFOPLIST_FILE = "$(SRCROOT)/Brooklyn/Info.plist";
 				INSTALL_PATH = "$(HOME)/Library/Screen Savers";
@@ -964,10 +976,10 @@
 					"@executable_path/../Frameworks",
 					"@loader_path/../Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 10.11;
-				MARKETING_VERSION = 2.1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = oedrommcarrasco.brooklyn;
-				PRODUCT_NAME = Brooklyn;
+				MACOSX_DEPLOYMENT_TARGET = 11.5;
+				MARKETING_VERSION = "1.0.0\n\n1.0.0\n1.0.0";
+				PRODUCT_BUNDLE_IDENTIFIER = com.shionshimada.salissaver;
+				PRODUCT_NAME = SalisSaver;
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
@@ -983,7 +995,7 @@
 				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 4;
+				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 7GE4Q65N57;
 				INFOPLIST_FILE = "$(SRCROOT)/Brooklyn/Info.plist";
 				INSTALL_PATH = "$(HOME)/Library/Screen Savers";
@@ -992,10 +1004,10 @@
 					"@executable_path/../Frameworks",
 					"@loader_path/../Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 10.11;
-				MARKETING_VERSION = 2.1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = oedrommcarrasco.brooklyn;
-				PRODUCT_NAME = Brooklyn;
+				MACOSX_DEPLOYMENT_TARGET = 11.5;
+				MARKETING_VERSION = "1.0.0\n\n1.0.0\n1.0.0";
+				PRODUCT_BUNDLE_IDENTIFIER = com.shionshimada.salissaver;
+				PRODUCT_NAME = SalisSaver;
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				WRAPPER_EXTENSION = saver;

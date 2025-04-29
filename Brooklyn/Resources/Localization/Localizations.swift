@@ -1,6 +1,6 @@
 //
 //  Localizations.swift
-//  Brooklyn
+//  SalisSaver
 //
 //  Created by Peter Bødskov on 06/10/2019.
 //  Copyright © 2019 Pedro Carrasco. All rights reserved.

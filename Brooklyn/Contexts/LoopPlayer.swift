@@ -1,6 +1,6 @@
 //
 //  LoopPlayer.swift
-//  Brooklyn
+//  SalisSaver
 //
 //  Created by Pedro Carrasco on 23/02/2019.
 //  Copyright © 2019 Pedro Carrasco. All rights reserved.
@@ -11,26 +11,68 @@ import AVFoundation
 // MARK: - LoopPlayer
 final class LoopPlayer: AVQueuePlayer {
     
+    // MARK: Properties
+    private var isLoadingItems = false
+    private var pendingAnimations: [Animation] = []
+    private var pendingLoops: Int = 0
+    private var pendingShouldRandomize: Bool = false
+    
     // MARK: Lifecycle
     init(items: [Animation], numberOfLoops: Int, shouldRandomize: Bool) {
-        let items = (shouldRandomize ? items.shuffled() : items)
-            .reduce(into: [AVPlayerItem]()) {
-                guard let item = AVPlayerItem(video: $1, extension: .mp4, for: LoopPlayer.self) else { return }
-                $0.append(contentsOf: Array(copy: item, count: numberOfLoops))
-            }
-            .prepareForQueue()
+        // 最初のアイテムだけを即時読み込み
+        let firstAnimation = items.first ?? .original
         
-        super.init(items: items)
-        observe()
+        if let firstItem = AVPlayerItem(video: firstAnimation, ext: .mp4, for: LoopPlayer.self) {
+            super.init(items: [firstItem])
+            
+            // 残りは後で非同期に読み込む
+            self.pendingAnimations = Array(items.dropFirst())
+            self.pendingLoops = numberOfLoops
+            self.pendingShouldRandomize = shouldRandomize
+            
+            observe()
+            
+            // バックグラウンドで残りをロード
+            DispatchQueue.global(qos: .background).async { [weak self] in
+                self?.loadRemainingItems()
+            }
+        } else {
+            super.init()
+            observe()
+        }
     }
     
     override init() {
         super.init()
     }
     
-    
     deinit {
         unobserve()
+    }
+    
+    // 残りのアイテムを非同期に読み込む
+    private func loadRemainingItems() {
+        guard !isLoadingItems, !pendingAnimations.isEmpty else { return }
+        
+        isLoadingItems = true
+        
+        let animations = pendingShouldRandomize ? pendingAnimations.shuffled() : pendingAnimations
+        let loadedItems = animations.reduce(into: [AVPlayerItem]()) {
+            guard let item = AVPlayerItem(video: $1, ext: .mp4, for: LoopPlayer.self) else { return }
+            $0.append(contentsOf: Array(copy: item, count: pendingLoops))
+        }.prepareForQueue()
+        
+        DispatchQueue.main.async { [weak self] in
+            guard let self = self else { return }
+            
+            // 既存のキューに追加
+            loadedItems.forEach {
+                self.insert($0, after: self.items().last)
+            }
+            
+            self.isLoadingItems = false
+            self.pendingAnimations = []
+        }
     }
 }
 
@@ -38,7 +80,7 @@ final class LoopPlayer: AVQueuePlayer {
 extension LoopPlayer {
     
     func play(_ animation: Animation) {
-        guard let item = AVPlayerItem(video: animation, extension: .mp4, for: LoopPlayer.self) else { return }
+        guard let item = AVPlayerItem(video: animation, ext: .mp4, for: LoopPlayer.self) else { return }
         actionAtItemEnd = .none
         removeAllItems()
         [item].prepareForQueue().forEach {

@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "21F222251B73B5AC00B9A11A"
-               BuildableName = "Brooklyn.saver"
+               BuildableName = "SalisSaver.saver"
                BlueprintName = "Brooklyn"
                ReferencedContainer = "container:Brooklyn.xcodeproj">
             </BuildableReference>
@@ -44,7 +44,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "21F222251B73B5AC00B9A11A"
-            BuildableName = "Brooklyn.saver"
+            BuildableName = "SalisSaver.saver"
             BlueprintName = "Brooklyn"
             ReferencedContainer = "container:Brooklyn.xcodeproj">
          </BuildableReference>
@@ -60,7 +60,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "21F222251B73B5AC00B9A11A"
-            BuildableName = "Brooklyn.saver"
+            BuildableName = "SalisSaver.saver"
             BlueprintName = "Brooklyn"
             ReferencedContainer = "container:Brooklyn.xcodeproj">
          </BuildableReference>

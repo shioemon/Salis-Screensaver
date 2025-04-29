@@ -1,20 +1,21 @@
 //
-//  BrooklynManager.swift
-//  Brooklyn
+//  SalisSaverManager.swift
+//  ShionSaver
 //
 //  Created by Pedro Carrasco on 21/02/2019.
-//  Copyright © 2019 Pedro Carrasco. All rights reserved.
+//  Modified for macOS Sequoia compatibility
 //
 
 import Foundation
 import ScreenSaver
 import AVKit
 
-// MARK: BrooklynManager
-final class BrooklynManager {
+// MARK: SalisSaverManager
+final class SalisSaverManager {
     
     private enum Constant {
-        static let bundleId = "oedrommcarrasco.brooklyn"
+        // バンドルIDを更新
+        static let bundleId = "com.shion.shionsaver"
         static let versionKey = "CFBundleShortVersionString"
     }
     
@@ -47,18 +48,18 @@ final class BrooklynManager {
     }
     
     lazy var currentVersion: String = {
-        // We are running from the Brooklyn screensaver itself
+        // シオンセーバーのスクリーンセーバー自体から実行されている場合
         if let screensaverBundle = Bundle(identifier: Constant.bundleId) {
             return screensaverBundle.infoDictionary?[Constant.versionKey] as? String ?? ""
         } else {
-            // We are running from canvas, lets return the version number from there...just to return something
+            // Canvasから実行されている場合は、そこからバージョン番号を返す
             return Bundle.main.infoDictionary?[Constant.versionKey] as? String ?? ""
         }
     }()
 }
 
 // MARK: - Animations
-extension BrooklynManager {
+extension SalisSaverManager {
     
     func toogle(_ animation: Animation) {
         var animations = selectedAnimations
@@ -74,7 +75,7 @@ extension BrooklynManager {
 }
 
 // MARK: - Preferences
-extension BrooklynManager {
+extension SalisSaverManager {
     
     func setNumberOfLoops(to numberOfLoops: Int) {
         self.numberOfLoops = numberOfLoops

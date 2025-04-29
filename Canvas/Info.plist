@@ -33,7 +33,7 @@
 	<key>CFBundleDisplayName</key>
 	<string></string>
 	<key>SUFeedURL</key>
-	<string>https://raw.githubusercontent.com/pedrommcarrasco/Brooklyn/master/appcast.xml</string>
+	<string>https://raw.githubusercontent.com/pedrommcarrasco/SalisSaver/master/appcast.xml</string>
 	<key>SUEnableAutomaticChecks</key>
 	<true/>
 	<key>SUPublicEDKey</key>

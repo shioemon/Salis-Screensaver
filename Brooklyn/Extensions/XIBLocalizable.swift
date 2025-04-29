@@ -1,6 +1,6 @@
 //
 //  XIBLocalizable.swift
-//  Brooklyn
+//  SalisSaver
 //
 //  Created by Michael Charland on 2019-10-09.
 //  Copyright © 2019 Pedro Carrasco. All rights reserved.

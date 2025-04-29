@@ -1,9 +1,9 @@
 //
 //  Database.swift
-//  Brooklyn
+//  ShionSaver
 //
 //  Created by Pedro Carrasco on 21/02/2019.
-//  Copyright © 2019 Pedro Carrasco. All rights reserved.
+//  Modified for macOS Sequoia compatibility
 //
 
 import ScreenSaver
@@ -20,7 +20,7 @@ struct Database {
 
     // MARK: Properties
     static var standard: ScreenSaverDefaults {
-        guard let bundleIdentifier = Bundle(for: BrooklynManager.self).bundleIdentifier,
+        guard let bundleIdentifier = Bundle(for: SalisSaverManager.self).bundleIdentifier,
             let database = ScreenSaverDefaults(forModuleWithName: bundleIdentifier)
             else { fatalError("Failed to retrieve database") }
 

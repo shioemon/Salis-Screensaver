@@ -1,6 +1,6 @@
 //
 //  PreferencesWindowController.swift
-//  BrooklynApplication
+//  SalisSaverApplication
 //
 //  Created by Pedro Carrasco on 19/02/2019.
 //  Copyright © 2019 Pedro Carrasco. All rights reserved.
@@ -27,7 +27,7 @@ final class PreferencesWindowController: NSWindowController, NSWindowDelegate {
     @IBOutlet private weak var currentVersionButton: NSButton!
     
     // MARK: Private Properties
-    private let manager = BrooklynManager(mode: .preferences)
+    private let manager = SalisSaverManager(mode: .preferences)
 }
 
 // MARK: - Lifecycle
@@ -95,7 +95,7 @@ extension PreferencesWindowController: NSTableViewDataSource {
         guard let item = manager.availableAnimations[safe: row] else { return nil }
         let cell = tableView.dequeueCell(for: self, as: AnimationCellView.self)
         cell.configure(with: item.name, state: manager.selectedAnimations.contains(item) ? .on : .off)
-        debugPrint("Brooklyn | \(item.name)")
+        debugPrint("SalisSaver | \(item.name)")
         cell.onToogle = { [weak manager] in manager?.toogle(item) }
         return cell
     }
@@ -136,6 +136,10 @@ private extension PreferencesWindowController {
     
     @IBAction func versionAction(_ sender: NSButton) {
         URLType.version.open()
+    }
+    
+    @IBAction func discordAction(_ sender: NSButton) {
+        URLType.discord.open()
     }
     
     @IBAction func doneAction(_ sender: NSButton) {

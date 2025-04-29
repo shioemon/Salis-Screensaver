@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="15400" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="23727" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
     <dependencies>
-        <deployment identifier="macosx"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="15400"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="23727"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -22,14 +21,14 @@
         <customObject id="YLy-65-1bz" customClass="NSFontManager"/>
         <menu title="Main Menu" systemMenu="main" id="AYu-sK-qS6">
             <items>
-                <menuItem title="BrooklynPreferences" id="1Xt-HY-uBw">
+                <menuItem title="SalisSaverPreferences" id="1Xt-HY-uBw">
                     <modifierMask key="keyEquivalentModifierMask"/>
-                    <menu key="submenu" title="BrooklynPreferences" systemMenu="apple" id="uQy-DD-JDr">
+                    <menu key="submenu" title="SalisSaverPreferences" systemMenu="apple" id="uQy-DD-JDr">
                         <items>
-                            <menuItem title="About BrooklynPreferences" id="5kV-Vb-QxS">
+                            <menuItem title="About SalisSaverPreferences" id="5kV-Vb-QxS">
                                 <modifierMask key="keyEquivalentModifierMask"/>
                                 <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="string" keyPath="xibLocKey" value="menu.aboutBrooklynPreferences"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="xibLocKey" value="menu.aboutSalisSaverPreferences"/>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="orderFrontStandardAboutPanel:" target="-1" id="Exp-CZ-Vem"/>
@@ -61,9 +60,9 @@
                                 </userDefinedRuntimeAttributes>
                             </menuItem>
                             <menuItem isSeparatorItem="YES" id="4je-JR-u6R"/>
-                            <menuItem title="Hide BrooklynPreferences" keyEquivalent="h" id="Olw-nP-bQN">
+                            <menuItem title="Hide SalisSaverPreferences" keyEquivalent="h" id="Olw-nP-bQN">
                                 <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="string" keyPath="xibLocKey" value="menu.hideBrooklynPreferences"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="xibLocKey" value="menu.hideSalisSaverPreferences"/>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="hide:" target="-1" id="PnN-Uc-m68"/>
@@ -88,9 +87,9 @@
                                 </connections>
                             </menuItem>
                             <menuItem isSeparatorItem="YES" id="kCx-OE-vgT"/>
-                            <menuItem title="Quit BrooklynPreferences" keyEquivalent="q" id="4sb-4s-VLi">
+                            <menuItem title="Quit SalisSaverPreferences" keyEquivalent="q" id="4sb-4s-VLi">
                                 <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="string" keyPath="xibLocKey" value="menu.quitBrooklynPreferences"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="xibLocKey" value="menu.quitSalisSaverPreferences"/>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="terminate:" target="-1" id="Te7-pn-YzF"/>
@@ -98,11 +97,11 @@
                             </menuItem>
                         </items>
                         <userDefinedRuntimeAttributes>
-                            <userDefinedRuntimeAttribute type="string" keyPath="xibLocKey" value="menu.brooklynPreferences"/>
+                            <userDefinedRuntimeAttribute type="string" keyPath="xibLocKey" value="menu.SalisSaverPreferences"/>
                         </userDefinedRuntimeAttributes>
                     </menu>
                     <userDefinedRuntimeAttributes>
-                        <userDefinedRuntimeAttribute type="string" keyPath="xibLocKey" value="menu.brooklynPreferences"/>
+                        <userDefinedRuntimeAttribute type="string" keyPath="xibLocKey" value="menu.SalisSaverPreferences"/>
                     </userDefinedRuntimeAttributes>
                 </menuItem>
                 <menuItem title="File" id="dMs-cI-mzQ">
@@ -1046,9 +1045,9 @@
                     <modifierMask key="keyEquivalentModifierMask"/>
                     <menu key="submenu" title="Help" systemMenu="help" id="F2S-fz-NVQ">
                         <items>
-                            <menuItem title="BrooklynPreferences Help" keyEquivalent="?" id="FKE-Sm-Kum">
+                            <menuItem title="SalisSaverPreferences Help" keyEquivalent="?" id="FKE-Sm-Kum">
                                 <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="string" keyPath="xibLocKey" value="menu.brooklynPreferencesHelp"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="xibLocKey" value="menu.SalisSaverPreferencesHelp"/>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="showHelp:" target="-1" id="y7X-2Q-9no"/>
@@ -1069,7 +1068,7 @@
         <window title="Canvas" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" restorable="NO" releasedWhenClosed="NO" visibleAtLaunch="NO" animationBehavior="default" titlebarAppearsTransparent="YES" id="QvC-M9-y7g">
             <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
             <rect key="contentRect" x="436" y="267" width="800" height="500"/>
-            <rect key="screenRect" x="0.0" y="0.0" width="2560" height="1417"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="1512" height="950"/>
             <value key="minSize" type="size" width="800" height="500"/>
             <value key="maxSize" type="size" width="800" height="500"/>
             <view key="contentView" wantsLayer="YES" id="EiT-Mj-1SZ">

@@ -1,26 +1,25 @@
-//
-//  URLType.swift
-//  Brooklyn
-//
-//  Created by Pedro Carrasco on 23/02/2019.
-//  Copyright © 2019 Pedro Carrasco. All rights reserved.
-//
-
 import Cocoa
 
 // MARK: - URLType
-enum URLType: String {
-    case help = "https://github.com/pedrommcarrasco/Brooklyn/issues"
-    case github = "https://github.com/pedrommcarrasco/Brooklyn"
-    case twitter = "https://twitter.com/pedrommcarrasco"
-    case version = "https://github.com/pedrommcarrasco/Brooklyn/releases"
+enum URLType {
+    case help
+    case twitter
+    case discord
 }
 
 // MARK: Functions
 extension URLType {
     
+    var urlString: String {
+        switch self {
+            case .help: return "https://x.com/c_y_l_i"
+            case .twitter: return "https://x.com/c_y_l_i"
+            case .discord: return "discordapp.com/users/323041740963446785"
+        }
+    }
+    
     func open() {
-        guard let url = URL(string: rawValue) else { return }
+        guard let url = URL(string: urlString) else { return }
         NSWorkspace.shared.open(url)
     }
 }
