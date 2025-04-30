@@ -23,7 +23,7 @@
             <windowStyleMask key="styleMask" titled="YES"/>
             <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
             <rect key="contentRect" x="196" y="240" width="800" height="532"/>
-            <rect key="screenRect" x="0.0" y="0.0" width="1512" height="944"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="1512" height="950"/>
             <view key="contentView" wantsLayer="YES" misplaced="YES" id="EiT-Mj-1SZ">
                 <rect key="frame" x="0.0" y="0.0" width="800" height="532"/>
                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -205,7 +205,7 @@ DQ
                     </button>
                     <textField focusRingType="none" horizontalHuggingPriority="251" verticalHuggingPriority="750" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="QPA-Ty-yka">
                         <rect key="frame" x="461" y="124" width="354" height="16"/>
-                        <textFieldCell key="cell" lineBreakMode="clipping" title="Want to keep updated?" id="3ad-ri-H5Y">
+                        <textFieldCell key="cell" lineBreakMode="clipping" title="Need a way to reach me?" id="3ad-ri-H5Y">
                             <font key="font" metaFont="system"/>
                             <color key="textColor" name="tertiaryLabelColor" catalog="System" colorSpace="catalog"/>
                             <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
@@ -227,6 +227,9 @@ DQ
                         <constraints>
                             <constraint firstAttribute="height" constant="20" id="0xa-79-BHd"/>
                         </constraints>
+                        <connections>
+                            <action selector="helpAction:" target="-2" id="NvW-yR-Ifj"/>
+                        </connections>
                     </button>
                     <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="w0R-LT-WzY">
                         <rect key="frame" x="463" y="76" width="350" height="20"/>

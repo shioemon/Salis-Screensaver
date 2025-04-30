@@ -1,4 +1,4 @@
-![](https://github.com/pedrommcarrasco/Brooklyn/blob/master/Design/logo.jpg?raw=true)
+![](https://raw.githubusercontent.com/op5no29/Salis-Screensaver/refs/heads/main/Brooklyn/Resources/title)
 
 # Salis Screensaver
 
@@ -21,7 +21,6 @@ Salis版ではこれらの問題を解決するために、最新のmacOSのレ�
 ## 機能 ✅
 
 * インターネット接続不要
-* Homebrewサポート
 * ライト＆ダークテーマ
 * 表示したいアニメーションを選択可能
 * 各アニメーションの繰り返し回数を設定可能
@@ -43,7 +42,7 @@ defaults -currentHost write com.apple.screensaver moduleDict -dict moduleName Sa
 
 ### 手動インストール :hand:
 
-1. [こちらをクリックしてダウンロード](https://github.com/shioemon/Salis-Screensaver/releases/download/1.0.0/Salis.saver.zip)
+1. [こちらをクリックしてダウンロード](https://github.com/op5no29/Salis-Screensaver/releases/download/1.0.0/Salis.saver.zip)
 2. **Salis.saver**を開く（ダブルクリック）
 3. 「"Salis.saver"は開発元が未確認のため開けません」というメッセージが表示されたら、`OK`をクリック
 4. `環境設定`を開く
@@ -51,22 +50,12 @@ defaults -currentHost write com.apple.screensaver moduleDict -dict moduleName Sa
 6. `一般`タブを選択
 7. 下部にある`とにかく開く`をクリック
 
-### Homebrew 🍺
-
-1. ターミナルを開く
-2. `brew install --cask salis --no-quarantine`と入力（※Homebrewでの配布開始後に有効になります）
-
 ## アンインストール 🗑️
 
 ### 手動 :hand:
 
 - システム環境設定でSalisを右クリックして`Salisを削除`を選択、または
 - `/Library/Screen Savers`または`/Users/ユーザー名/Library/Screen Savers`にある`Salis.saver`を削除
-
-### Homebrew 🍺
-
-1. ターミナルを開く
-2. `brew uninstall --cask salis`と入力（※Homebrewでの配布開始後に有効になります）
 
 ## 互換性 🔧
 
@@ -92,11 +81,18 @@ sudo xattr -d com.apple.quarantine ~/"Library/Screen Savers/Salis.saver"
 
 ## 貢献  🙌 
 
-このプロジェクトに[アイデア](https://github.com/shioemon/Salis-Screensaver/issues)を提供したり、新機能や既存の問題を解決する[プルリクエスト](https://github.com/shioemon/Salis-Screensaver/pulls)を開いたりして、自由に貢献してください。
+このプロジェクトに[アイデア](https://github.com/op5no29/Salis-Screensaver/issues)を提供したり、新機能や既存の問題を解決する[プルリクエスト](https://github.com/op5no29/Salis-Screensaver/pulls)を開いたりして、自由に貢献してください。
 
 ## ライセンス ⛔
 
-SalisはMITライセンスの下で利用可能です。詳細については[LICENSE](https://github.com/shioemon/Salis-Screensaver/blob/main/LICENSE)ファイルを参照してください。ロゴ＆オリジナルアニメーションはApple社の所有物です。
+SalisはMITライセンスの下で利用可能です。詳細については[LICENSE](https://github.com/op5no29/Salis-Screensaver/blob/main/LICENSE)ファイルを参照してください。ロゴ＆オリジナルアニメーションはApple社の所有物です。
+
+## コンタクト 📨
+
+質問や提案がある場合は、Xまたはディスコードでお気軽にご連絡ください。
+
+* [X / Twitter](https://x.com/c_y_l_i)
+* [Discord](https://discord.com/users/323041740963446785)
 
 ---
 
@@ -108,7 +104,7 @@ SalisはMITライセンスの下で利用可能です。詳細については[LI
 
 > A modified version of "Brooklyn" screen saver by [Pedro Carrasco](https://twitter.com/pedrommcarrasco) based on the animations presented during **[Apple Special Event](https://www.youtube.com/watch?v=bfHEnw6Rm-4)** (October 30, 2018) from the Brooklyn Academy of Music, Howard Gilman Opera House.
 
-## Why Salis Version　was created
+## Why Salis Version was created
 
 On the latest macOS versions (Sequoia, Sonoma, and Ventura), the original Brooklyn screensaver had compatibility issues, including:
 
@@ -125,7 +121,6 @@ Salis Version was created to address these issues by updating the code to be com
 ## Features ✅
 
 * Doesn't require internet connection
-* Homebrew support
 * Light & Dark theme
 * Select which animations you want to see
 * Loop each animation how many times you want
@@ -147,7 +142,7 @@ defaults -currentHost write com.apple.screensaver moduleDict -dict moduleName Sa
 
 ### Manual :hand:
 
-1. [Click here to Download](https://github.com/shioemon/Salis-Screensaver/releases/download/1.0.0/Salis.saver.zip)
+1. [Click here to Download](https://github.com/op5no29/Salis-Screensaver/releases/download/1.0.0/Salis.saver.zip)
 2. Open **Salis.saver** (double click)
 3. `"Salis.saver" can't be opened because it is from an unidentified developer` will appear, press `OK`
 4. Open `Preferences`
@@ -155,22 +150,12 @@ defaults -currentHost write com.apple.screensaver moduleDict -dict moduleName Sa
 6. Select `General`
 7. On the bottom side, select `Open Anyway`
 
-### Homebrew 🍺
-
-1. Open terminal
-2. Enter `brew install --cask salis --no-quarantine` (Will be available after Homebrew distribution is set up)
-
 ## Uninstallation 🗑️
 
 ### Manual :hand:
 
 - Right-click on Salis in System Preferences and select `Delete Salis`, or
 - Delete `Salis.saver` either in `/Library/Screen Savers` or `/Users/USERNAME/Library/Screen Savers`. 
-
-### Homebrew 🍺
-
-1. Open terminal
-2. Enter `brew uninstall --cask salis` (Will be available after Homebrew distribution is set up)
 
 ## Compatibility 🔧
 
@@ -196,8 +181,15 @@ This screensaver is a modified version of [Brooklyn](https://github.com/pedrommc
 
 ## Contributing  🙌 
 
-Feel free to contribute to this project by providing [ideas](https://github.com/shioemon/Salis-Screensaver/issues) or opening [pull requests](https://github.com/shioemon/Salis-Screensaver/pulls) with new features or solving an existing issue.
+Feel free to contribute to this project by providing [ideas](https://github.com/op5no29/Salis-Screensaver/issues) or opening [pull requests](https://github.com/op5no29/Salis-Screensaver/pulls) with new features or solving an existing issue.
 
 ## License ⛔
 
-Salis is available under the MIT license. See the [LICENSE](https://github.com/shioemon/Salis-Screensaver/blob/main/LICENSE) file for more information. Logo & original animations are Apple's property.
+Salis is available under the MIT license. See the [LICENSE](https://github.com/op5no29/Salis-Screensaver/blob/main/LICENSE) file for more information. Logo & original animations are Apple's property.
+
+## Contact 📨
+
+Looking for a way to reach us? Feel free to connect via X or Discord:
+
+* [X / Twitter](https://x.com/c_y_l_i)
+* [Discord](https://discord.com/users/323041740963446785)

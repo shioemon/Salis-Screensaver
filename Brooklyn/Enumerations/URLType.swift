@@ -12,7 +12,7 @@ extension URLType {
     
     var urlString: String {
         switch self {
-        case .help: return "https://x.com/c_y_l_i"
+        case .help: return "https://github.com/op5no29/Salis-Screensaver"
         case .twitter: return "https://x.com/c_y_l_i"
         case .discord: return "https://discordapp.com/users/323041740963446785"
         }

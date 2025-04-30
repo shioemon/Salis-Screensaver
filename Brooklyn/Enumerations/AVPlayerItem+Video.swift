@@ -2,8 +2,8 @@
 //  AVPlayerItem+Video.swift
 //  SalisSaver
 //
-//  Created by [あなたの名前]
-//  Copyright © 2025 [あなたの名前]. All rights reserved.
+//  Created by Shion SHIMADA
+//  Copyright © 2025 Shion SHIMADA. All rights reserved.
 //
 
 import AVFoundation
