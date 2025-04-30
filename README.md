@@ -98,7 +98,7 @@ SalisはMITライセンスの下で利用可能です。詳細については[LI
 
 # English Version
 
-![](https://github.com/pedrommcarrasco/Brooklyn/blob/master/Design/logo.jpg?raw=true)
+![](https://raw.githubusercontent.com/op5no29/Salis-Screensaver/refs/heads/main/Brooklyn/Resources/title.png)
 
 # Salis Screensaver
 
