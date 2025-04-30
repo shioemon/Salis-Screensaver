@@ -2,7 +2,7 @@
 
 # Salis Screensaver
 
-> [Pedro Carrasco](https://twitter.com/pedrommcarrasco)により制作された**[Appleスペシャルイベント](https://www.youtube.com/watch?v=bfHEnw6Rm-4)**(2018年10月30日)のブルックリン音楽アカデミー、ハワード・ギルマン・オペラハウスで発表されたアニメーションに基づくスクリーンセーバー「Brooklyn」を改良したバージョンです。
+> <a href="https://twitter.com/pedrommcarrasco" target="_blank">Pedro Carrasco</a>により制作された**<a href="https://www.youtube.com/watch?v=bfHEnw6Rm-4" target="_blank">Appleスペシャルイベント</a>**(2018年10月30日)のブルックリン音楽アカデミー、ハワード・ギルマン・オペラハウスで発表されたアニメーションに基づくスクリーンセーバー「Brooklyn」を改良したバージョンです。
 
 ## なぜSalis版を作ったのか
 
@@ -42,7 +42,7 @@ defaults -currentHost write com.apple.screensaver moduleDict -dict moduleName Sa
 
 ### 手動インストール :hand:
 
-1. [こちらをクリックしてダウンロード](https://github.com/op5no29/Salis-Screensaver/releases/download/v1.0.0/SalisSaver.saver.zip)
+1. <a href="https://github.com/op5no29/Salis-Screensaver/releases/latest/download/Salis.saver.zip" target="_blank">こちらをクリックしてダウンロード</a>
 2. **Salis.saver**を開く（ダブルクリック）
 3. 「"Salis.saver"は開発元が未確認のため開けません」というメッセージが表示されたら、`OK`をクリック
 4. `環境設定`を開く
@@ -73,26 +73,26 @@ sudo xattr -d com.apple.quarantine ~/"Library/Screen Savers/Salis.saver"
 
 ## クレジット ❤️
 
-本スクリーンセーバーは[Pedro Carrasco](https://twitter.com/pedrommcarrasco)氏の[Brooklyn](https://github.com/pedrommcarrasco/Brooklyn)をベースに改良したものです。オリジナル版の開発者をサポートしたい場合は、以下のリンクをご利用ください：
+本スクリーンセーバーは<a href="https://twitter.com/pedrommcarrasco" target="_blank">Pedro Carrasco</a>氏の<a href="https://github.com/pedrommcarrasco/Brooklyn" target="_blank">Brooklyn</a>をベースに改良したものです。オリジナル版の開発者をサポートしたい場合は、以下のリンクをご利用ください：
 
-* https://github.com/users/pedrommcarrasco/sponsorship
-* https://www.buymeacoffee.com/pedrommcarrasco
-* https://www.paypal.me/pedrommcarrasco
+* <a href="https://github.com/users/pedrommcarrasco/sponsorship" target="_blank">GitHub Sponsors</a>
+* <a href="https://www.buymeacoffee.com/pedrommcarrasco" target="_blank">Buy Me A Coffee</a>
+* <a href="https://www.paypal.me/pedrommcarrasco" target="_blank">PayPal</a>
 
 ## 貢献  🙌 
 
-このプロジェクトに[アイデア](https://github.com/op5no29/Salis-Screensaver/issues)を提供したり、新機能や既存の問題を解決する[プルリクエスト](https://github.com/op5no29/Salis-Screensaver/pulls)を開いたりして、自由に貢献してください。
+このプロジェクトに<a href="https://github.com/op5no29/Salis-Screensaver/issues" target="_blank">アイデア</a>を提供したり、新機能や既存の問題を解決する<a href="https://github.com/op5no29/Salis-Screensaver/pulls" target="_blank">プルリクエスト</a>を開いたりして、自由に貢献してください。
 
 ## ライセンス ⛔
 
-SalisはMITライセンスの下で利用可能です。詳細については[LICENSE](https://github.com/op5no29/Salis-Screensaver/blob/main/LICENSE)ファイルを参照してください。ロゴ＆オリジナルアニメーションはApple社の所有物です。
+SalisはMITライセンスの下で利用可能です。詳細については<a href="https://github.com/op5no29/Salis-Screensaver/blob/main/LICENSE" target="_blank">LICENSE</a>ファイルを参照してください。ロゴ＆オリジナルアニメーションはApple社の所有物です。
 
 ## コンタクト 📨
 
 質問や提案がある場合は、Xまたはディスコードでお気軽にご連絡ください。
 
-* [X / Twitter](https://x.com/c_y_l_i)
-* [Discord](https://discord.com/users/323041740963446785)
+* <a href="https://x.com/c_y_l_i" target="_blank">X / Twitter</a>
+* <a href="https://discord.com/users/323041740963446785" target="_blank">Discord</a>
 
 ---
 
@@ -102,7 +102,7 @@ SalisはMITライセンスの下で利用可能です。詳細については[LI
 
 # Salis Screensaver
 
-> A modified version of "Brooklyn" screen saver by [Pedro Carrasco](https://twitter.com/pedrommcarrasco) based on the animations presented during **[Apple Special Event](https://www.youtube.com/watch?v=bfHEnw6Rm-4)** (October 30, 2018) from the Brooklyn Academy of Music, Howard Gilman Opera House.
+> A modified version of "Brooklyn" screen saver by <a href="https://twitter.com/pedrommcarrasco" target="_blank">Pedro Carrasco</a> based on the animations presented during **<a href="https://www.youtube.com/watch?v=bfHEnw6Rm-4" target="_blank">Apple Special Event</a>** (October 30, 2018) from the Brooklyn Academy of Music, Howard Gilman Opera House.
 
 ## Why Salis Version was created
 
@@ -142,7 +142,7 @@ defaults -currentHost write com.apple.screensaver moduleDict -dict moduleName Sa
 
 ### Manual :hand:
 
-1. [Click here to Download](https://github.com/op5no29/Salis-Screensaver/releases/download/v1.0.0/SalisSaver.saver.zip)
+1. <a href="https://github.com/op5no29/Salis-Screensaver/releases/latest/download/Salis.saver.zip" target="_blank">Click here to Download</a>
 2. Open **Salis.saver** (double click)
 3. `"Salis.saver" can't be opened because it is from an unidentified developer` will appear, press `OK`
 4. Open `Preferences`
@@ -173,23 +173,23 @@ sudo xattr -d com.apple.quarantine ~/"Library/Screen Savers/Salis.saver"
 
 ## Credits ❤️
 
-This screensaver is a modified version of [Brooklyn](https://github.com/pedrommcarrasco/Brooklyn) by [Pedro Carrasco](https://twitter.com/pedrommcarrasco). If you'd like to support the original developer, please consider:
+This screensaver is a modified version of <a href="https://github.com/pedrommcarrasco/Brooklyn" target="_blank">Brooklyn</a> by <a href="https://twitter.com/pedrommcarrasco" target="_blank">Pedro Carrasco</a>. If you'd like to support the original developer, please consider:
 
-* https://github.com/users/pedrommcarrasco/sponsorship
-* https://www.buymeacoffee.com/pedrommcarrasco
-* https://www.paypal.me/pedrommcarrasco
+* <a href="https://github.com/users/pedrommcarrasco/sponsorship" target="_blank">GitHub Sponsors</a>
+* <a href="https://www.buymeacoffee.com/pedrommcarrasco" target="_blank">Buy Me A Coffee</a>
+* <a href="https://www.paypal.me/pedrommcarrasco" target="_blank">PayPal</a>
 
 ## Contributing  🙌 
 
-Feel free to contribute to this project by providing [ideas](https://github.com/op5no29/Salis-Screensaver/issues) or opening [pull requests](https://github.com/op5no29/Salis-Screensaver/pulls) with new features or solving an existing issue.
+Feel free to contribute to this project by providing <a href="https://github.com/op5no29/Salis-Screensaver/issues" target="_blank">ideas</a> or opening <a href="https://github.com/op5no29/Salis-Screensaver/pulls" target="_blank">pull requests</a> with new features or solving an existing issue.
 
 ## License ⛔
 
-Salis is available under the MIT license. See the [LICENSE](https://github.com/op5no29/Salis-Screensaver/blob/main/LICENSE) file for more information. Logo & original animations are Apple's property.
+Salis is available under the MIT license. See the <a href="https://github.com/op5no29/Salis-Screensaver/blob/main/LICENSE" target="_blank">LICENSE</a> file for more information. Logo & original animations are Apple's property.
 
 ## Contact 📨
 
 Looking for a way to reach us? Feel free to connect via X or Discord:
 
-* [X / Twitter](https://x.com/c_y_l_i)
-* [Discord](https://discord.com/users/323041740963446785)
+* <a href="https://x.com/c_y_l_i" target="_blank">X / Twitter</a>
+* <a href="https://discord.com/users/323041740963446785" target="_blank">Discord</a>
