@@ -42,7 +42,7 @@ defaults -currentHost write com.apple.screensaver moduleDict -dict moduleName Sa
 
 ### 手動インストール :hand:
 
-1. [こちらをクリックしてダウンロード](https://github.com/op5no29/Salis-Screensaver/releases/download/1.0.0/Salis.saver.zip)
+1. [こちらをクリックしてダウンロード](https://github.com/op5no29/Salis-Screensaver/releases/download/v1.0.0/SalisSaver.saver.zip)
 2. **Salis.saver**を開く（ダブルクリック）
 3. 「"Salis.saver"は開発元が未確認のため開けません」というメッセージが表示されたら、`OK`をクリック
 4. `環境設定`を開く
@@ -142,7 +142,7 @@ defaults -currentHost write com.apple.screensaver moduleDict -dict moduleName Sa
 
 ### Manual :hand:
 
-1. [Click here to Download](https://github.com/op5no29/Salis-Screensaver/releases/download/1.0.0/Salis.saver.zip)
+1. [Click here to Download](https://github.com/op5no29/Salis-Screensaver/releases/download/v1.0.0/SalisSaver.saver.zip)
 2. Open **Salis.saver** (double click)
 3. `"Salis.saver" can't be opened because it is from an unidentified developer` will appear, press `OK`
 4. Open `Preferences`
