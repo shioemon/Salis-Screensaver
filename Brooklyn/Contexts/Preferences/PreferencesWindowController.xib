@@ -247,9 +247,9 @@ DQ
                     </button>
                     <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="AJd-fC-cWE">
                         <rect key="frame" x="463" y="104" width="350" height="20"/>
-                        <buttonCell key="cell" type="square" title="Need anything? DM me on Discord" bezelStyle="shadowlessSquare" image="Discord" imagePosition="left" alignment="center" scrollable="YES" lineBreakMode="clipping" imageScaling="proportionallyDown" inset="2" id="KgX-fg-HvM">
+                        <buttonCell key="cell" type="square" title="　Need anything? DM me on Discord" bezelStyle="shadowlessSquare" image="Discord" imagePosition="left" alignment="left" scrollable="YES" lineBreakMode="clipping" imageScaling="proportionallyDown" inset="2" id="KgX-fg-HvM">
                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
-                            <font key="font" metaFont="system"/>
+                            <font key="font" size="13" name=".HiraKakuInterface-W4"/>
                             <userDefinedRuntimeAttributes>
                                 <userDefinedRuntimeAttribute type="string" keyPath="xibLocKey" value="preferences.starSalisSaver"/>
                             </userDefinedRuntimeAttributes>
@@ -360,7 +360,7 @@ DQ
         </window>
     </objects>
     <resources>
-        <image name="Discord" width="512" height="366"/>
+        <image name="Discord" width="300" height="300"/>
         <image name="twitter" width="60" height="40"/>
         <image name="version" width="60" height="40"/>
     </resources>
