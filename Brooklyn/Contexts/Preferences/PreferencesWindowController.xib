@@ -227,9 +227,6 @@ DQ
                         <constraints>
                             <constraint firstAttribute="height" constant="20" id="0xa-79-BHd"/>
                         </constraints>
-                        <connections>
-                            <action selector="versionAction:" target="-2" id="o8l-Kk-uV9"/>
-                        </connections>
                     </button>
                     <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="w0R-LT-WzY">
                         <rect key="frame" x="463" y="76" width="350" height="20"/>
@@ -261,6 +258,9 @@ DQ
                         <constraints>
                             <constraint firstAttribute="height" constant="20" id="6su-ic-SIf"/>
                         </constraints>
+                        <connections>
+                            <action selector="discordAction:" target="-2" id="PVU-aD-mdp"/>
+                        </connections>
                     </button>
                     <popUpButton verticalHuggingPriority="750" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tdt-p9-Ns2">
                         <rect key="frame" x="722" y="228" width="48" height="25"/>

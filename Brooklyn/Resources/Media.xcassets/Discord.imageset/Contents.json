@@ -1,23 +1,7 @@
 {
   "images" : [
     {
-      "idiom" : "mac",
-      "scale" : "1x"
-    },
-    {
-      "appearances" : [
-        {
-          "appearance" : "luminosity",
-          "value" : "dark"
-        }
-      ],
-      "idiom" : "mac",
-      "scale" : "1x"
-    },
-    {
-      "filename" : "discord-Black-icon.pdf",
-      "idiom" : "mac",
-      "scale" : "2x"
+      "idiom" : "mac"
     },
     {
       "appearances" : [
@@ -27,12 +11,14 @@
         }
       ],
       "filename" : "discord-white-icon.pdf",
-      "idiom" : "mac",
-      "scale" : "2x"
+      "idiom" : "mac"
     }
   ],
   "info" : {
     "author" : "xcode",
     "version" : 1
+  },
+  "properties" : {
+    "preserves-vector-representation" : true
   }
 }

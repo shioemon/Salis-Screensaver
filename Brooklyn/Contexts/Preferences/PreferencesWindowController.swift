@@ -126,17 +126,17 @@ private extension PreferencesWindowController {
         URLType.help.open()
     }
     
-    @IBAction func githubAction(_ sender: NSButton) {
-        URLType.github.open()
-    }
+//    @IBAction func githubAction(_ sender: NSButton) {
+//        URLType.github.open()
+//    }
     
     @IBAction func twitterAction(_ sender: NSButton) {
         URLType.twitter.open()
     }
     
-    @IBAction func versionAction(_ sender: NSButton) {
-        URLType.version.open()
-    }
+//    @IBAction func versionAction(_ sender: NSButton) {
+//        URLType.version.open()
+//    }
     
     @IBAction func discordAction(_ sender: NSButton) {
         URLType.discord.open()
