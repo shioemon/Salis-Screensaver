@@ -1,4 +1,4 @@
-![](https://raw.githubusercontent.com/op5no29/Salis-Screensaver/refs/heads/main/Brooklyn/Resources/title)
+![](https://raw.githubusercontent.com/op5no29/Salis-Screensaver/refs/heads/main/Brooklyn/Resources/title.png)
 
 # Salis Screensaver
 
